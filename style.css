@@ -23,6 +23,7 @@ p {
 }
 header, .sub-head {
   text-align: center;
+  padding: 0 6px;
 }
 a.cta {
   background-color: var(--primary);
