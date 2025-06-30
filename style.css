@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary: #25D366;
+  --dark: #1c1c1c;
+  --light: #f4f4f4;
+}
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: url("FB_IMG_17280672534182986.jpg"), auto;
+}
+img {
+  max-width: 100%;
+}
+h1, h2 {
+  color: var(--primary);
+}
+p {
+  color: var(--dark);
+}
+header, .sub-head {
+  text-align: center;
+}
+a.cta {
+  background-color: var(--primary);
+  color: var(--light);
+  border-radius: 8px;
+  display: block;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  font-size: 1.5em;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+section {
+  padding: 12px;
+}
+section.testimonials {
+  display: grid;
+  grid-template-areas: "text text" "picture name";
+  grid-template-rows: auto auto;
+  border: 1px dotted var(--primary);
+  margin-top: 8px;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--light);
+}
+section.testimonials h1 {
+  grid-area: picture;
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  width: 20%;
+}
+section.testimonials h3 {
+  grid-area: name;
+}
+section.testimonials p {
+  grid-area: text;
+}
+form {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
+form input, form textarea {
+  width: 100%;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--light);
+  margin-top: 8px;
+  padding: 5px;
+  outline: none;
+}
+form textarea {
+  height: auto!important;
+}
+form input:hover, form textarea:hover {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+form input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--light);
+}
+button {
+  background-color: var(--primary);
+  border: none;
+  padding: 10px;
+}
