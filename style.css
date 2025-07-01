@@ -95,7 +95,7 @@ button {
   padding: 10px;
 }
 .pop {
-  visibility: hidden;
+  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
