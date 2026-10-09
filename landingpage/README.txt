@@ -1,0 +1,1 @@
+Mobile-first lead magnet landing page. Replace the demo form behavior in js/script.js with your real Google Form, WhatsApp, email platform, or other lead-delivery system.
