@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
 
@@ -97,38 +96,22 @@
       <h2>Ready to stop guessing and <span>start learning?</span></h2>
       <p>Enter your details below and get access to the free beginner's guide.</p>
 
-      <div id="error-message" class="sib-form-message-panel" role="alert" style="display:none;">
-        Your subscription could not be saved. Please try again.
-      </div>
-      <div id="success-message" class="sib-form-message-panel" role="status" style="display:none;">
-        Your details have been submitted. Redirecting you to your guide…
-      </div>
+      <form id="leadForm">
+        <label for="name">First name</label>
+        <input type="text" id="name" placeholder="Your first name" required>
 
-      <form id="sib-form" class="lead-form" method="POST"
-        action="https://1a558c91.sibforms.com/serve/MUIFAJxNrmAEKAoBBZk158JAOyKOR7S80umXUYm6kNG-5wlENhh0obmMxyf9q3_VNXcIlMUnsHI60hzCioM9GxQw0LByFJr05f0IgPYcQDCQ46T8SRMh7GnyJDbrtEktE7Z2epybk-B_yoMAq9C7k49ycu37bRBr4q3GyFgiGf5Qz4GxaEOBuXJrRgCTqd_7Bc_TOxnI_thSgf3KNw=="
-        data-type="subscription">
-<label for="EMAIL">Email address</label>
-        <input type="email" id="EMAIL" name="EMAIL" autocomplete="email"
-          placeholder="you@example.com" required>
+        <label for="contact">Email or WhatsApp number</label>
+        <input type="text" id="contact" placeholder="e.g. you@email.com" required>
 
-        <button type="submit" class="btn primary-btn sib-form-block__button">
-          Send Me the Free Guide →
-        </button>
-        <p class="form-note">Your details are used to deliver the guide and send relevant follow-up resources.</p>
-
-        <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="locale" value="en">
+        <button type="submit" class="btn primary-btn">Send Me the Free Guide →</button>
+        <p class="form-note">Your details are only used to deliver the guide and follow up with useful resources.</p>
+        <p class="form-message" id="formMessage"></p>
       </form>
     </div>
   </section>
 </main>
 
 <footer><p>© 2026 Divine. All rights reserved.</p></footer>
-<script>
-  window.LOCALE = 'en';
-  window.EMAIL_INVALID_MESSAGE = 'Please enter a valid email address.';
-  window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank.';
-  window.GENERIC_INVALID_MESSAGE = 'Please check the information and try again.';
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
