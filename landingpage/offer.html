@@ -3,115 +3,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A free beginner's guide to starting an online income with your smartphone.">
-  <title>Free Guide | Start Making Money Online</title>
+  <meta name="description" content="Download your free guide, The First Offer.">
+  <title>Your Guide Is Ready | Divine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --ink: #171717;
+      --muted: #666;
+      --accent: #d6a84f;
+      --paper: #fff;
+      --soft: #f7f5f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+    }
+
+    .site-header {
+      min-height: 76px;
+      padding: 18px clamp(20px, 6vw, 84px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: -0.04em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .header-note {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    main {
+      min-height: calc(100vh - 145px);
+      display: grid;
+      place-items: center;
+      padding: 56px 20px 70px;
+      background: radial-gradient(ellipse at 50% 0%, #faf4e7 0, #fff 58%);
+    }
+
+    .success-card {
+      width: min(100%, 680px);
+      text-align: center;
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid #eee7db;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 18px 55px rgba(25, 25, 25, 0.06);
+    }
+
+    .check {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: #f6ecd7;
+      color: #805c17;
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #8b671f;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0 14px;
+      font-size: clamp(2rem, 5.5vw, 3.25rem);
+      line-height: 1.15;
+      letter-spacing: -0.055em;
+    }
+
+    h1 span {
+      color: #b8892d;
+    }
+
+    .intro {
+      max-width: 510px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .download-area {
+      margin: 30px 0 26px;
+      padding: 25px 20px;
+      border-radius: 16px;
+      background: var(--soft);
+    }
+
+    .book-label {
+      margin: 0 0 5px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .book-sub {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 14px 25px;
+      border-radius: 9px;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      background: #333;
+      transform: translateY(-1px);
+    }
+
+    .small-note {
+      margin: 12px 0 0;
+      color: #777;
+      font-size: 0.78rem;
+    }
+
+    .next-steps {
+      text-align: left;
+      margin: 28px auto 0;
+      max-width: 490px;
+    }
+
+    .next-steps h2 {
+      font-size: 1.05rem;
+      margin: 0 0 10px;
+    }
+
+    .next-steps ol {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .next-steps li {
+      margin: 7px 0;
+      padding-left: 3px;
+    }
+
+    .email-note {
+      margin: 24px 0 0;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.78rem;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 480px) {
+      .header-note {
+        font-size: 0.75rem;
+      }
+
+      .site-header {
+        min-height: 65px;
+      }
+
+      .success-card {
+        border-radius: 16px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header class="site-header">
-  <a href="#" class="logo">Divine<span>.</span></a>
-  <a href="#get-guide" class="header-link">Get the free guide</a>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">FREE BEGINNER'S GUIDE</span>
-      <h1>How to Start Making Money Online With Just Your <span>Smartphone</span></h1>
-      <p class="hero-text">A simple, practical guide for beginners who want to start building an online income without hype, confusion, or expensive equipment.</p>
-      <a href="#get-guide" class="btn primary-btn">Get the Free Guide <span>→</span></a>
-      <p class="micro-copy">Free guide • Beginner-friendly • Practical steps</p>
-    </div>
-
-    <div class="guide-visual">
-      <div class="glow"></div>
-      <div class="guide-card">
-        <div class="guide-top">FREE GUIDE</div>
-        <div class="guide-title">START<br>MAKING<br><span>MONEY</span><br>ONLINE</div>
-        <div class="guide-subtitle">A beginner's roadmap to building an online income with your smartphone.</div>
-        <div class="guide-footer">DIVINE'S ONLINE BUSINESS GUIDE</div>
+  <header class="site-header">
+    <a href="index2.html" class="logo">Divine<span>.</span></a>
+    <span class="header-note">Your free guide is ready</span>
+  </header>
+  <main>
+    <section class="success-card" aria-labelledby="page-title">
+      <div class="check" aria-hidden="true">✓</div>
+      <span class="eyebrow">YOU'RE IN</span>
+      <h1 id="page-title">Your guide is <span>ready.</span></h1>
+      <p class="intro">Thanks for signing up. Your copy of <em>The First Offer</em> is ready to download. Set aside a little time to read it and work through the ideas.</p>
+      <div class="download-area">
+        <p class="book-label">The First Offer</p>
+        <p class="book-sub">Your beginner's guide to understanding affiliate marketing and getting started.</p>
+        <a class="btn" href="The-First-Offer-Affiliate-Marketing-Guide-edited.pdf" download>Download Your Free Guide <span aria-hidden="true">↓</span></a>
+        <p class="small-note">PDF format · Opens on your phone or computer</p>
       </div>
-    </div>
-  </section>
-
-  <section class="problem section">
-    <div class="section-heading">
-      <span class="eyebrow">SOUND FAMILIAR?</span>
-      <h2>Trying to make money online but don't know <span>where to start?</span></h2>
-      <p>You don't need another confusing list of online business ideas. You need a clear starting point.</p>
-    </div>
-
-    <div class="problem-grid">
-      <article class="problem-card"><span>01</span><h3>Too many options</h3><p>You keep seeing different ways to make money online and don't know which one to focus on.</p></article>
-      <article class="problem-card"><span>02</span><h3>No clear roadmap</h3><p>You understand that people are making money online, but nobody has shown you the actual steps.</p></article>
-      <article class="problem-card"><span>03</span><h3>Afraid of wasting time</h3><p>You don't want to jump from one strategy to another and end up with nothing to show for it.</p></article>
-    </div>
-  </section>
-
-  <section class="inside section">
-    <div class="section-heading">
-      <span class="eyebrow">INSIDE THE GUIDE</span>
-      <h2>You'll finally have a <span>simple direction</span></h2>
-      <p>Here's what the free guide will help you understand.</p>
-    </div>
-
-    <div class="inside-list">
-      <div class="inside-item"><div class="number">01</div><div><h3>Where to start</h3><p>Understand the paths beginners can use to build an online income.</p></div></div>
-      <div class="inside-item"><div class="number">02</div><div><h3>What actually matters</h3><p>Separate useful skills and strategies from the noise and empty promises.</p></div></div>
-      <div class="inside-item"><div class="number">03</div><div><h3>How to get your first audience</h3><p>Learn why content, attention and trust matter before you expect consistent sales.</p></div></div>
-      <div class="inside-item"><div class="number">04</div><div><h3>Your first practical steps</h3><p>Turn what you've learned into a simple action plan you can start with your phone.</p></div></div>
-    </div>
-  </section>
-
-  <section class="who section">
-    <div class="who-box">
-      <span class="eyebrow">THIS IS FOR YOU IF...</span>
-      <h2>You're a beginner who wants to <span>start properly.</span></h2>
-      <ul>
-        <li>You want to learn how online income actually works.</li>
-        <li>You have a smartphone and internet access.</li>
-        <li>You want practical guidance instead of hype.</li>
-        <li>You're willing to learn and take consistent action.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="about section">
-    <div class="about-avatar">D</div>
-    <div>
-      <span class="eyebrow">A QUICK INTRO</span>
-      <h2>I'm Divine.</h2>
-      <p>I create simple resources for beginners who want to understand digital business, online marketing and the practical steps behind building an online income.</p>
-      <p>This guide is designed to help you stop guessing and start with a clearer direction.</p>
-    </div>
-  </section>
-
-  <section class="cta section" id="get-guide">
-    <div class="cta-box">
-      <span class="eyebrow">GET YOUR FREE COPY</span>
-      <h2>Ready to stop guessing and <span>start learning?</span></h2>
-      <p>Enter your details below and get access to the free beginner's guide.</p>
-
-      <form id="leadForm">
-        <label for="name">First name</label>
-        <input type="text" id="name" placeholder="Your first name" required>
-
-        <label for="contact">Email or WhatsApp number</label>
-        <input type="text" id="contact" placeholder="e.g. you@email.com" required>
-
-        <button type="submit" class="btn primary-btn">Send Me the Free Guide →</button>
-        <p class="form-note">Your details are only used to deliver the guide and follow up with useful resources.</p>
-        <p class="form-message" id="formMessage"></p>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer><p>© 2026 Divine. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
+      <div class="next-steps">
+        <h2>What to do next</h2>
+        <ol>
+          <li>Download the guide and save it somewhere easy to find.</li>
+          <li>Read it in order rather than jumping between different strategies.</li>
+          <li>Keep an eye on your inbox for useful follow-up guidance.</li>
+        </ol>
+      </div>
+      <p class="email-note">Tip: If you don't see a follow-up email later, check your spam or promotions folder.</p>
+    </section>
+  </main>
+  <footer>© 2026 Divine. All rights reserved.</footer>
 </body>
 </html>
