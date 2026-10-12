@@ -3,30 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Download your free guide, The First Offer.">
+  <meta name="description" content="Download The First Offer, a beginner-friendly guide to understanding affiliate marketing and getting started online.">
   <title>Your Guide Is Ready | Divine</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --ink: #171717;
-      --muted: #666;
-      --accent: #d6a84f;
-      --paper: #fff;
-      --soft: #f7f5f0;
+      --background: #101010;
+      --surface: #181818;
+      --surface-light: #202020;
+      --text: #f7f7f7;
+      --muted: #b7b7b7;
+      --accent: #e0b354;
+      --accent-dark: #b98a2e;
+      --border: rgba(255, 255, 255, 0.1);
+      --radius: 20px;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
+      min-height: 100vh;
       margin: 0;
+      background: var(--background);
+      color: var(--text);
       font-family: 'Poppins', sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.65;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
     }
 
     .site-header {
@@ -35,15 +50,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #eee;
+      gap: 18px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(16, 16, 16, 0.92);
     }
 
     .logo {
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 800;
+      color: var(--text);
       font-size: 1.35rem;
+      font-weight: 800;
       letter-spacing: -0.04em;
+      text-decoration: none;
     }
 
     .logo span {
@@ -57,161 +74,205 @@
 
     main {
       min-height: calc(100vh - 145px);
+      padding: 58px 20px 76px;
       display: grid;
       place-items: center;
-      padding: 56px 20px 70px;
-      background: radial-gradient(ellipse at 50% 0%, #faf4e7 0, #fff 58%);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(224, 179, 84, 0.11), transparent 48%),
+        var(--background);
     }
 
     .success-card {
-      width: min(100%, 680px);
-      text-align: center;
+      width: min(100%, 760px);
       padding: clamp(28px, 6vw, 58px);
-      border: 1px solid #eee7db;
-      border-radius: 22px;
-      background: #fff;
-      box-shadow: 0 18px 55px rgba(25, 25, 25, 0.06);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, #1b1b1b, #141414 72%);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+      text-align: center;
     }
 
     .check {
       width: 58px;
       height: 58px;
+      margin: 0 auto 20px;
       display: grid;
       place-items: center;
-      margin: 0 auto 22px;
+      border: 1px solid rgba(224, 179, 84, 0.35);
       border-radius: 50%;
-      background: #f6ecd7;
-      color: #805c17;
+      background: rgba(224, 179, 84, 0.12);
+      color: var(--accent);
       font-size: 1.7rem;
       font-weight: 700;
     }
 
     .eyebrow {
       display: inline-block;
-      color: #8b671f;
+      color: var(--accent);
       font-size: 0.76rem;
       font-weight: 700;
-      letter-spacing: 0.13em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
     }
 
     h1 {
-      margin: 12px 0 14px;
-      font-size: clamp(2rem, 5.5vw, 3.25rem);
-      line-height: 1.15;
+      margin: 12px 0 16px;
+      font-size: clamp(2rem, 5.5vw, 3.35rem);
+      line-height: 1.16;
       letter-spacing: -0.055em;
     }
 
-    h1 span {
-      color: #b8892d;
+    h1 span,
+    .next-steps h2 span {
+      color: var(--accent);
     }
 
     .intro {
-      max-width: 510px;
+      max-width: 550px;
       margin: 0 auto;
       color: var(--muted);
       font-size: 1rem;
     }
 
     .download-area {
-      margin: 30px 0 26px;
-      padding: 25px 20px;
+      margin: 32px 0 28px;
+      padding: clamp(24px, 4vw, 34px) 22px;
+      border: 1px solid rgba(224, 179, 84, 0.2);
       border-radius: 16px;
-      background: var(--soft);
+      background: var(--surface-light);
+    }
+
+    .file-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 12px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: rgba(224, 179, 84, 0.12);
+      color: var(--accent);
+      font-size: 1.35rem;
     }
 
     .book-label {
       margin: 0 0 5px;
+      font-size: 1.2rem;
       font-weight: 700;
-      font-size: 1.1rem;
     }
 
     .book-sub {
-      margin: 0 0 20px;
+      max-width: 440px;
+      margin: 0 auto 22px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.92rem;
     }
 
     .btn {
+      min-height: 54px;
+      padding: 14px 25px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      min-height: 54px;
-      padding: 14px 25px;
+      border: 0;
       border-radius: 9px;
-      background: var(--ink);
-      color: white;
+      background: var(--accent);
+      color: #15120b;
+      font-size: 0.95rem;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.15s ease, background 0.15s ease;
+      transition: background 0.18s ease, transform 0.18s ease;
     }
 
     .btn:hover {
-      background: #333;
-      transform: translateY(-1px);
+      background: #edc66f;
+      transform: translateY(-2px);
     }
 
     .small-note {
-      margin: 12px 0 0;
-      color: #777;
+      margin: 13px 0 0;
+      color: #999;
       font-size: 0.78rem;
     }
 
     .next-steps {
+      max-width: 520px;
+      margin: 32px auto 0;
       text-align: left;
-      margin: 28px auto 0;
-      max-width: 490px;
     }
 
     .next-steps h2 {
-      font-size: 1.05rem;
-      margin: 0 0 10px;
+      margin: 0 0 13px;
+      font-size: 1.12rem;
     }
 
     .next-steps ol {
       margin: 0;
-      padding-left: 22px;
+      padding-left: 24px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.92rem;
     }
 
     .next-steps li {
-      margin: 7px 0;
-      padding-left: 3px;
+      margin: 9px 0;
+      padding-left: 4px;
     }
 
     .email-note {
-      margin: 24px 0 0;
-      padding-top: 18px;
-      border-top: 1px solid #eee;
-      color: var(--muted);
-      font-size: 0.83rem;
+      margin: 28px 0 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: #a9a9a9;
+      font-size: 0.82rem;
     }
 
     footer {
-      padding: 20px;
-      text-align: center;
-      color: #888;
+      padding: 22px 20px;
+      border-top: 1px solid var(--border);
+      color: #858585;
       font-size: 0.78rem;
-      border-top: 1px solid #eee;
+      text-align: center;
     }
 
     @media (max-width: 480px) {
-      .header-note {
-        font-size: 0.75rem;
+      .site-header {
+        min-height: 66px;
       }
 
-      .site-header {
-        min-height: 65px;
+      .header-note {
+        max-width: 150px;
+        font-size: 0.72rem;
+        text-align: right;
+      }
+
+      main {
+        padding: 34px 14px 46px;
       }
 
       .success-card {
+        padding: 28px 20px;
         border-radius: 16px;
+      }
+
+      .intro {
+        font-size: 0.94rem;
       }
 
       .btn {
         width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -221,29 +282,48 @@
     <a href="index2.html" class="logo">Divine<span>.</span></a>
     <span class="header-note">Your free guide is ready</span>
   </header>
+
   <main>
     <section class="success-card" aria-labelledby="page-title">
       <div class="check" aria-hidden="true">✓</div>
       <span class="eyebrow">YOU'RE IN</span>
       <h1 id="page-title">Your guide is <span>ready.</span></h1>
-      <p class="intro">Thanks for signing up. Your copy of <em>The First Offer</em> is ready to download. Set aside a little time to read it and work through the ideas.</p>
+      <p class="intro">
+        Thanks for signing up. Your copy of <em>The First Offer</em> is ready to download.
+        Take your time with it and focus on understanding the ideas before moving on to the next step.
+      </p>
+
       <div class="download-area">
+        <div class="file-icon" aria-hidden="true">↓</div>
         <p class="book-label">The First Offer</p>
-        <p class="book-sub">Your beginner's guide to understanding affiliate marketing and getting started.</p>
-        <a class="btn" href="The-First-Offer-Affiliate-Marketing-Guide-edited.pdf" download>Download Your Free Guide <span aria-hidden="true">↓</span></a>
-        <p class="small-note">PDF format · Opens on your phone or computer</p>
+        <p class="book-sub">
+          A beginner-friendly guide to understanding affiliate marketing and getting started online.
+        </p>
+        <a
+          class="btn"
+          href="The-First-Offer-Affiliate-Marketing-Guide-edited.pdf"
+          download
+        >
+          Download Your Free Guide <span aria-hidden="true">↓</span>
+        </a>
+        <p class="small-note">PDF format · Read it on your phone or computer. videos are coming soon</p>
       </div>
+
       <div class="next-steps">
-        <h2>What to do next</h2>
+        <h2>What to do <span>next</span></h2>
         <ol>
           <li>Download the guide and save it somewhere easy to find.</li>
-          <li>Read it in order rather than jumping between different strategies.</li>
-          <li>Keep an eye on your inbox for useful follow-up guidance.</li>
+          <li>Read it in order instead of jumping between different strategies.</li>
+          <li>Choose one practical idea from the guide and put it into action.</li>
         </ol>
       </div>
-      <p class="email-note">Tip: If you don't see a follow-up email later, check your spam or promotions folder.</p>
+
+      <p class="email-note">
+        Keep an eye on your inbox for further guidance as we finish setting up email delivery.
+      </p>
     </section>
   </main>
+
   <footer>© 2026 Divine. All rights reserved.</footer>
 </body>
 </html>
